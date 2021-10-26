@@ -1,0 +1,200 @@
+html {
+    padding: 0;
+    margin: 0 auto;
+    user-select: none;
+}
+
+
+.double {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+
+.main_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 500px;
+    background-color: #565656;
+    border: 1px solid grey;
+    border-radius: 34px;
+    
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 42px 54px;
+
+}
+
+
+.item {
+    background-color: #8f949b;
+    display: flex;
+    width: 43px;
+    height: 38px;
+    padding-left: 1px;
+    font-size: 33px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 8px;
+    padding: 24px 24px;
+    margin-top: 12px;
+    color: white;
+    justify-content: center;
+    font-weight: bold;
+
+}
+
+.input {
+    width: 100%;
+}
+
+.input input{
+   width: 98%;
+   height: 52px; 
+   border-radius: 17px;
+   background-color: #51b8e3;
+   color: white;
+   font-size: 30px;
+   font-weight: bold;
+   
+  
+}
+
+
+.operation {
+     background-color: #51b8e3;
+}
+
+.equal {
+    background-color: #e16148;
+    width: 100%;
+}
+
+
+.num {
+position: absolute;
+max-height: 720px;
+overflow-y: scroll;
+}
+
+.list {
+    display: none;
+    
+
+}
+
+.list  li {
+    font-size: 23px;
+    font-weight: bold;
+    list-style: auto;
+}
+
+
+
+@media  (max-width: 738px) and (min-width: 375px) {
+    
+    .main_container {
+        max-width: 320px;
+    }
+
+    .flex-container {
+        margin: 22px 36px;
+    }
+
+    .item {
+         width: 17px;
+        height: 1px;
+        padding: 28px 19px;
+        align-items: center;
+    }
+
+    .equal {
+        width: 100%;
+    }
+
+    .double {
+        flex-wrap: wrap;
+    }
+
+    .list {
+        
+        
+    }
+    .num {
+        height: 300px;
+        position: static;
+    }
+    
+}
+
+@media (min-width: 518px) and (max-width: 739px) {
+    .list li {
+        font-size: 20px;
+}
+
+    
+}
+
+
+@media (min-width: 330px) and (max-width: 374px){
+
+
+.flex-container {
+    margin: 17px 28px;
+}
+
+
+    .item {
+    padding: 22px 28px;
+    width: 5px;
+    height: 15px;
+    align-items: center;
+
+    }
+
+    .equal {
+        width: 100%;
+    }
+
+    .num {
+        position: static;
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 330px) {
+
+    .double {
+        flex-wrap: wrap;
+    }
+   
+    .main_container {
+        max-width: 100%;
+    }
+
+    .num {
+        position: static;
+    }
+
+    .item {
+        align-items: center;
+        padding: 16px 17px;
+        width: 24px;
+        height: 23px;
+    }
+
+    .equal {
+        width: 100%;
+    }
+
+    .flex-container {
+        margin: 17px 14px;
+}
